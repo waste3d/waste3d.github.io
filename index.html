@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Портфолио Go Разработчика</title>
+    <style>
+        /* --- Общие стили --- */
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            margin: 0;
+            background-color: #f4f4f9;
+            color: #333;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* --- Шапка --- */
+        header {
+            text-align: center;
+            padding: 50px 20px;
+            background-color: #2c3e50;
+            color: #ecf0f1;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+        header p {
+            margin-top: 10px;
+            font-size: 1.2em;
+            color: #bdc3c7;
+        }
+        .social-links a {
+            color: #ecf0f1;
+            margin: 0 10px;
+            text-decoration: none;
+            font-size: 1.5em;
+            transition: color 0.3s;
+        }
+        .social-links a:hover {
+            color: #3498db;
+        }
+
+        /* --- Секция "Обо мне" --- */
+        .about {
+            background-color: #ffffff;
+            padding: 40px;
+            margin-top: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        .about h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #2c3e50;
+        }
+
+        /* --- Секция "Проекты" --- */
+        .projects {
+            margin-top: 30px;
+        }
+        .projects h2 {
+            text-align: center;
+            margin-bottom: 30px;
+            color: #2c3e50;
+        }
+        .project-card {
+            background-color: #ffffff;
+            border: 1px solid #ddd;
+            padding: 25px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .project-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+        }
+        .project-card h3 {
+            margin-top: 0;
+        }
+        .project-card a {
+            text-decoration: none;
+            color: #3498db;
+            font-weight: bold;
+            font-size: 1.2em;
+        }
+        .project-card a:hover {
+            text-decoration: underline;
+        }
+        .project-card .language {
+            display: inline-block;
+            background-color: #e0e0e0;
+            color: #555;
+            padding: 5px 10px;
+            border-radius: 15px;
+            font-size: 0.8em;
+            margin-top: 10px;
+        }
+        /* Цвета для языков */
+        .lang-go { background-color: #00add8; color: white; }
+        .lang-cpp { background-color: #f34b7d; color: white; }
+        .lang-c { background-color: #555555; color: white; }
+        .lang-js { background-color: #f1e05a; color: #333; }
+
+
+        /* --- Подвал --- */
+        footer {
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+            color: #777;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Шапка с основной информацией -->
+    <header>
+        <div class="container">
+            <!-- ЗАМЕНИТЕ НА ВАШЕ ИМЯ -->
+            <h1>Ваше Имя</h1>
+            <p>Go Developer | Backend Engineer</p>
+            <div class="social-links">
+                <!-- Укажите правильную ссылку на ваш GitHub -->
+                <a href="https://github.com/waste3d" target="_blank" title="GitHub">GH</a>
+                <!-- Добавьте ссылки на другие соцсети, если нужно (например, LinkedIn, Telegram) -->
+                <!-- <a href="https://linkedin.com/in/..." target="_blank" title="LinkedIn">IN</a> -->
+                <!-- <a href="https://t.me/..." target="_blank" title="Telegram">TG</a> -->
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+
+        <!-- Секция "Обо мне" -->
+        <section class="about">
+            <h2>Обо мне</h2>
+            <!-- НАПИШИТЕ НЕСКОЛЬКО СЛОВ О СЕБЕ -->
+            <p>
+                Привет! Я бэкенд-разработчик, специализируюсь на Go. Мне нравится создавать эффективные и масштабируемые системы. В свободное время я экспериментирую с аудио-плагинами на C++ и изучаю новые технологии.
+            </p>
+        </section>
+
+        <!-- Секция с проектами -->
+        <section class="projects">
+            <h2>Мои проекты</h2>
+
+            <!-- Карточка проекта 1 -->
+            <div class="project-card">
+                <h3><a href="https://github.com/waste3d/parser" target="_blank">parser</a></h3>
+                <p>Ваше описание проекта. Например: "Простой и эффективный парсер для [указать чего], написанный на Go. Демонстрирует работу с [указать технологию/библиотеку]".</p>
+                <span class="language lang-go">Go</span>
+            </div>
+
+            <!-- Карточка проекта 2 -->
+            <div class="project-card">
+                <h3><a href="https://github.com/waste3d/hw-2-unpack-string" target="_blank">hw-2-unpack-string</a></h3>
+                <p>Ваше описание проекта. Например: "Утилита для распаковки строк, реализованная на Go. Отличное упражнение на работу со строками и рунами в Go."</p>
+                <span class="language lang-go">Go</span>
+            </div>
+
+            <!-- Карточка проекта 3 - пример для другого языка -->
+            <div class="project-card">
+                <h3><a href="https://github.com/Wasted-Audio/wstd-dl3y" target="_blank">wstd-dl3y</a></h3>
+                <p>Ваше описание проекта. Например: "Многополосный дилэй-плагин в формате VST3/AU. Этот проект демонстрирует мои навыки в разработке аудио-софта на C++."</p>
+                <span class="language lang-cpp">C++</span>
+            </div>
+
+            <!-- Карточка проекта 4 - пример для другого языка -->
+            <div class="project-card">
+                <h3><a href="https://github.com/Wasted-Audio/hvcc" target="_blank">hvcc</a></h3>
+                <p>Ваше описание проекта. Например: "Форк компилятора Heavy, который транслирует патчи из Pure Data в оптимизированный C/C++ код."</p>
+                <span class="language lang-c">C</span>
+            </div>
+
+            <!-- СКОПИРУЙТЕ БЛОК project-card ЧТОБЫ ДОБАВИТЬ БОЛЬШЕ ПРОЕКТОВ -->
+
+        </section>
+    </main>
+
+    <!-- Подвал -->
+    <footer>
+        <p>&copy; 2025 Ваше Имя. Сделано с помощью HTML & CSS.</p>
+    </footer>
+
+</body>
+</html>
